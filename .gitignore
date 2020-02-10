@@ -1,0 +1,10 @@
+./output/*.mat
+
+*.fig
+*.m~
+*.mat
+
+codegen/*
+
+getErrorMetric_align_mex.mexa64
+getErrorMetric_align.prj

@@ -1,0 +1,13 @@
+function plotTrend(trend_base, trend_imp, legend_arr, ax)
+%%
+
+% yyaxis left
+
+plot(ax, ...
+    trend_base(:, 1), ...
+    trend_base(:, 2), '-ob', 'MarkerSize', 3)
+plot(ax, ...
+    trend_imp(:, 1), ...
+    trend_imp(:, 2), '-xr', 'MarkerSize', 3)
+legend({legend_arr{1}; legend_arr{2};});
+% ylim([0 1])
