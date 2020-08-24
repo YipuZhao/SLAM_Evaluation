@@ -5,9 +5,9 @@ addpath('/mnt/DATA/SDK/altmany-export_fig');
 addpath('/mnt/DATA/SDK/aboxplot');
 
 %%
-data_path = '/mnt/DATA/DropboxContainer/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/ORBv2_Stereo_LogDet_Demo/'
+data_path = '/mnt/DATA/DropboxContainer/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/ORBv2_Stereo_LogDet_Demo/'
 rn = 1
-save_path = './output/TRO19/EuRoC/'
+save_path = './output/TRO20/EuRoC/'
 figure_size = [1 1 1000 1000];
 
 %

@@ -5,7 +5,7 @@ addpath('/mnt/DATA/SDK/altmany-export_fig');
 addpath('/mnt/DATA/SDK/aboxplot');
 
 % set up parameters for each benchmark
-benchMark = 'TUM_VI_TRO19_Stereo' % 'EuRoC_TRO19_Stereo' % 'KITTI_TRO19_Stereo' % 
+benchMark = 'TUM_VI_TRO20_Stereo' % 'EuRoC_TRO20_Stereo' % 'KITTI_TRO20_Stereo' % 
 % 
 
 setParam
@@ -687,7 +687,7 @@ if plot_total_time_stat
   
   
   % Plot Comparison Illustration
-  if strcmp(benchMark, 'KITTI_TRO19_Stereo')
+  if strcmp(benchMark, 'KITTI_TRO20_Stereo')
     x = categorical({
       'ORB';
       'Lazy-ORB';

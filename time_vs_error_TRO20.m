@@ -7,19 +7,19 @@ addpath('/mnt/DATA/SDK/aboxplot');
 % addpath('/mnt/DATA/SDK/DataDensity');
 
 % set up parameters for each benchmark
-benchMark = 'EuRoC_TRO19_Mono' % 'TUM_RGBD_TRO19_Mono' % 'NUIM_TRO19_Mono' %
-% 'TUM_VI_TRO19_Stereo' % 'KITTI_TRO19_Stereo' % 'EuRoC_TRO19_Stereo' % 
-% 'EuRoC_TRO19_OnDevice_X200CA' % 'EuRoC_TRO19_OnDevice_Jetson' % 'EuRoC_TRO19_OnDevice_Euclid' % 
-% 
+benchMark = 'EuRoC_TRO20_Stereo' % 
+% 'TUM_VI_TRO20_Stereo' % 'KITTI_TRO20_Stereo' % 
+% 'EuRoC_TRO20_OnDevice_X200CA' % 'EuRoC_TRO20_OnDevice_Jetson' % 'EuRoC_TRO20_OnDevice_Euclid' % 
+% 'EuRoC_TRO20_Mono' % 'TUM_RGBD_TRO20_Mono' % 'NUIM_TRO20_Mono' %
 %
-% 'EuRoC_TRO19_OnDevice_Odroid' % 'TUM_VI_TRO19_Mono' %
+% 'EuRoC_TRO20_OnDevice_Odroid' % 'TUM_VI_TRO20_Mono' %
 % 'EuRoC_MapHash_Mono'  'EuRoC_Propo_OnDevice_Euclid' %
 
 setParam
 
 % do_fair_comparison = false; % true; %
 do_perc_plot = true; % false; %
-plot_summary = false; % true; %
+plot_summary = true; % false; % 
 scatter_buf = cell(length(metric_type), length(slam_path_list));
 table_buf = cell(length(metric_type), length(slam_path_list));
 
@@ -657,179 +657,177 @@ for sn = 1:length(seq_list) % [1,5,10] %
   
 end
 
-%%
+%% order to print out summary 
+% for stereo
+slam_mtd_order = [3, 1:2, 6:8, 4:5];
+% for mono
+% slam_mtd_order = [2, 3, 1, 4:6];
+
 if plot_summary
-  %   close all
-  %   for mn=1:length(metric_type)
-  %     figure;
-  %     hold on
-  %     for tn=1:3
-  %       scatter_syl = marker_styl{tn};
-  %       scatter_syl = scatter_syl(length(scatter_syl):end);
-  %       scatter(scatter_buf{mn,tn}(1,:), scatter_buf{mn,tn}(2,:), ...
-  %         scatter_syl, 'MarkerEdgeColor', marker_color{tn});
-  %       j = boundary(scatter_buf{mn,tn}(1,:)', scatter_buf{mn,tn}(2,:)', 0.5);
-  %       plot(scatter_buf{mn,tn}(1,j), scatter_buf{mn,tn}(2,j), [':' scatter_syl], ...
-  %         'color', marker_color{tn});
-  %     end
-  %     %
-  %     for tn=4
-  %       scatter_syl = marker_styl{floor((tn-baseline_num-1)/(mod_base)) + baseline_num + 1};
-  %       scatter_syl = scatter_syl(length(scatter_syl):end);
-  %       scatter(scatter_buf{mn,tn}(1,:), scatter_buf{mn,tn}(2,:), ...
-  %         scatter_syl, 'MarkerEdgeColor', marker_color{tn});
-  %       j = boundary(scatter_buf{mn,tn}(1,:)', scatter_buf{mn,tn}(2,:)', 0.5);
-  %       plot(scatter_buf{mn,tn}(1,j), scatter_buf{mn,tn}(2,j), [':' scatter_syl], ...
-  %         'color', marker_color{tn});
-  %     end
-  %     %
-  %     legend_style = gobjects(length(legend_arr),1);
-  %     for i=1:length(legend_arr)
-  %       scatter_syl = marker_styl{i};
-  %       scatter_syl = scatter_syl(length(scatter_syl):end);
-  %       legend_style(i) = plot(nan, nan, scatter_syl, 'color', marker_color{i});
-  %     end
-  %     %     legend(legend_style([3:4, 1:2, 5:6]), legend_arr{[3:4, 1:2, 5:6]}, 'Location', 'best')
-  %     legend(legend_style([2,3,1,4]), legend_arr{[2,3,1,4]}, 'Location', 'best')
-  %     %     legend(legend_style([2,3,1,6]), legend_arr{[2,3,1,6]}, 'Location', 'best')
-  %     %     legend(legend_style([3,1,2,6]), legend_arr{[3,1,2,6]}, 'Location', 'best')
-  %     %
-  %     xlabel('Tracking Time per Frame (ms)')
-  %     %   ylabel(metric_type{mn})
-  %     switch metric_type{mn}
-  %       case 'TrackLossRate'
-  %         %       ylim([0 100])
-  %         %         set(gca, 'YScale', 'log')
-  %         ylabel('Un-Tracked Frame (%)')
-  %       case 'RMSE'
-  %         %             ylim([0.02 0.24])
-  %         set(gca, 'YScale', 'log')
-  %         ylabel('RMSE (m)')
-  %       case 'abs\_orient'
-  %         %
-  %       case 'RPE3'
-  %         %         ylim([0.005 0.05])
-  %         set(gca, 'YScale', 'log')
-  %         ylabel('RPE3 (m/s)')
-  %       case 'ROE3'
-  %         %         ylim([0.05 0.5])
-  %         set(gca, 'YScale', 'log')
-  %         ylabel('ROE (deg/s)')
-  %     end
-  %   end
-  
-  mtd_VINS = {'svomsf'; 'msckf'; 'okvis'; 'rovio'; 'vinsmono'; 'svogtsam'};
-  
-  RMSE_VINS = [
-    0.14 0.42 0.16 0.21 0.27 0.05
-    0.20 0.45 0.22 0.25 0.12 0.03
-    0.48 0.23 0.24 0.25 0.13 0.12
-    1.38 0.37 0.34 0.49 0.23 0.13
-    0.51 0.48 0.47 0.52 0.35 0.16
-    0.40 0.34 0.09 0.10 0.07 0.07
-    0.63 0.20 0.20 0.10 0.10 0.11
-    nan 0.67 0.24 0.14 0.13 nan
-    0.20 0.10 0.13 0.12 0.08 0.07
-    0.37 0.16 0.16 0.14 0.08 nan
-    nan 1.13 0.29 0.14 0.21 nan
-    ];
-  
-  time_VINS = [
-    10.12 23.286343474729243 34.45716357557306 23.161929366972476 63.54280540054348 31.66453847816673;
-    9.920849166891589 22.658193540204355 34.19164716923077 23.13870004197531 61.07770836537196 32.193929095513106;
-    10.538878176812892 11.728531555213374 32.49234006077587 22.80714456904541 71.325129869533 62.919931751544574
-    9.748879009964414 22.02041862405063 26.94485186793612 22.790130780653115 63.11419262795276 25.552754641366224
-    9.58671661646926 22.157435284468665 29.633627712292004 22.702577067217632 60.13781228634362 17.015873227668845
-    8.793656197074954 23.247456882651214 25.772469131934564 20.864116554600173 64.48724021374571 43.09663759905831
-    8.954884050290136 21.973954 19.82569783580247 21.652605348717948 56.21554189344263 76.32892773809525
-    nan 21.243677938609846 17.265912877166915 20.56323701805475 44.3186230689013 nan
-    8.456355065132223 23.957648742042753 24.185243483826877 21.027745728869373 57.70985057243197 23.028449354226023
-    8.736827900592795 23.52646850516854 22.99945402058695 21.825285956313266 51.80080331031544 nan
-    nan 21.485682449552236 13.26667232305999 21.415750553970224 44.33911163067695 nan
-    ];
-  
-  VINS_color = {
-    [1 0.84 0];
-    [0.184 0.078 0.635];
-    [0 0 0];
-    [1 0 0];
-    [0 1 0];
-    [0.9 0.7 0.3];
-    };
-  
-  close all
-  for mn=1:length(metric_type)
-    figure;
-    hold on
-    for tn=1:3
-      scatter_syl = marker_styl{tn};
-      scatter_syl = scatter_syl(length(scatter_syl):end);
-      scatter(scatter_buf{mn,tn}(1,:), scatter_buf{mn,tn}(2,:), ...
-        scatter_syl, 'MarkerEdgeColor', marker_color{tn});
-      j = boundary(scatter_buf{mn,tn}(1,:)', scatter_buf{mn,tn}(2,:)', 0.5);
-      plot(scatter_buf{mn,tn}(1,j), scatter_buf{mn,tn}(2,j), [':' scatter_syl], ...
-        'color', marker_color{tn});
+    close all
+    for mn=1:length(metric_type)
+      figure;
+      hold on
+      for tn=slam_mtd_order
+        scatter_syl = marker_styl{tn};
+        scatter_syl = scatter_syl(length(scatter_syl):end);
+        scatter(scatter_buf{mn,tn}(1,:), scatter_buf{mn,tn}(2,:), ...
+          scatter_syl, 'MarkerEdgeColor', marker_color{tn});
+        j = boundary(scatter_buf{mn,tn}(1,:)', scatter_buf{mn,tn}(2,:)', 0.5);
+        plot(scatter_buf{mn,tn}(1,j), scatter_buf{mn,tn}(2,j), [':' scatter_syl], ...
+          'color', marker_color{tn});
+      end
+      %
+%       for tn=4
+%         scatter_syl = marker_styl{floor((tn-baseline_num-1)/(mod_base)) + baseline_num + 1};
+%         scatter_syl = scatter_syl(length(scatter_syl):end);
+%         scatter(scatter_buf{mn,tn}(1,:), scatter_buf{mn,tn}(2,:), ...
+%           scatter_syl, 'MarkerEdgeColor', marker_color{tn});
+%         j = boundary(scatter_buf{mn,tn}(1,:)', scatter_buf{mn,tn}(2,:)', 0.5);
+%         plot(scatter_buf{mn,tn}(1,j), scatter_buf{mn,tn}(2,j), [':' scatter_syl], ...
+%           'color', marker_color{tn});
+%       end
+      %
+      legend_style = gobjects(length(legend_arr),1);
+      for i=1:length(legend_arr)
+        scatter_syl = marker_styl{i};
+        scatter_syl = scatter_syl(length(scatter_syl):end);
+        legend_style(i) = plot(nan, nan, scatter_syl, 'color', marker_color{i});
+      end
+      %     legend(legend_style([3:4, 1:2, 5:6]), legend_arr{[3:4, 1:2, 5:6]}, 'Location', 'best')
+      legend(legend_style(slam_mtd_order), legend_arr{slam_mtd_order}, 'Location', 'best')
+      %     legend(legend_style([2,3,1,6]), legend_arr{[2,3,1,6]}, 'Location', 'best')
+      %     legend(legend_style([3,1,2,6]), legend_arr{[3,1,2,6]}, 'Location', 'best')
+      %
+      xlabel('Tracking Time per Frame (ms)')
+      %   ylabel(metric_type{mn})
+      switch metric_type{mn}
+        case 'TrackLossRate'
+          %       ylim([0 100])
+          %         set(gca, 'YScale', 'log')
+          ylabel('Un-Tracked Frame (%)')
+        case 'RMSE'
+          %             ylim([0.02 0.24])
+          set(gca, 'YScale', 'log')
+          ylabel('RMSE (m)')
+        case 'abs\_orient'
+          %
+        case 'RPE3'
+          %         ylim([0.005 0.05])
+          set(gca, 'YScale', 'log')
+          ylabel('RPE3 (m/s)')
+        case 'ROE3'
+          %         ylim([0.05 0.5])
+          set(gca, 'YScale', 'log')
+          ylabel('ROE (deg/s)')
+      end
     end
-    for tn=1:length(mtd_VINS)
-      vld_x = time_VINS(~isnan(time_VINS(:,tn)), tn);
-      vld_y = RMSE_VINS(~isnan(RMSE_VINS(:,tn)), tn);
-      scatter(vld_x, vld_y, ...
-        'x', 'MarkerEdgeColor', VINS_color{tn});
-      j = boundary(vld_x, vld_y, 0.5);
-      plot(vld_x(j), vld_y(j), ':', 'color', VINS_color{tn});
-    end
-    %
-    legend_style = gobjects(3+length(mtd_VINS),1);
-    for i=1:3
-      scatter_syl = marker_styl{i};
-      scatter_syl = scatter_syl(length(scatter_syl):end);
-      legend_style(i) = plot(nan, nan, scatter_syl, 'color', marker_color{i});
-    end
-    for i=1:length(mtd_VINS)
-      scatter_syl = 'x';
-      legend_style(3+i) = plot(nan, nan, scatter_syl, 'color', VINS_color{i});
-    end
-    %     legend(legend_style([3:4, 1:2, 5:6]), legend_arr{[3:4, 1:2, 5:6]}, 'Location', 'best')
-    %     legend(legend_style([2,3,1]), legend_arr{[2,3,1]}, 'Location', 'best')
-    %     legend(legend_style([2,3,1,6]), legend_arr{[2,3,1,6]}, 'Location', 'best')
-    %     legend(legend_style([3,1,2,6]), legend_arr{[3,1,2,6]}, 'Location', 'best')
-    legend(legend_style, {'ORB'; 'SVO2'; 'DSO'; 'svomsf'; 'msckf'; 'okvis'; 'rovio'; 'vinsmono'; 'svogtsam'}, 'Location', 'best')
-    %
-    xlabel('Average Tracking Latency (ms)')
-    %     xlabel('Tracking Time per Frame (ms)')
-    %   ylabel(metric_type{mn})
-    switch metric_type{mn}
-      case 'TrackLossRate'
-        %       ylim([0 100])
-        %         set(gca, 'YScale', 'log')
-        ylabel('Un-Tracked Frame (%)')
-      case 'RMSE'
-        %             ylim([0.02 0.24])
-        set(gca, 'YScale', 'log')
-        ylabel('RMSE (m)')
-      case 'abs\_orient'
-        %
-      case 'RPE3'
-        %         ylim([0.005 0.05])
-        set(gca, 'YScale', 'log')
-        ylabel('RPE (m/s)')
-      case 'ROE3'
-        %         ylim([0.05 0.5])
-        set(gca, 'YScale', 'log')
-        ylabel('ROE (deg/s)')
-    end
-  end
+  
+%   mtd_VINS = {'svomsf'; 'msckf'; 'okvis'; 'rovio'; 'vinsmono'; 'svogtsam'};
+%   
+%   RMSE_VINS = [
+%     0.14 0.42 0.16 0.21 0.27 0.05
+%     0.20 0.45 0.22 0.25 0.12 0.03
+%     0.48 0.23 0.24 0.25 0.13 0.12
+%     1.38 0.37 0.34 0.49 0.23 0.13
+%     0.51 0.48 0.47 0.52 0.35 0.16
+%     0.40 0.34 0.09 0.10 0.07 0.07
+%     0.63 0.20 0.20 0.10 0.10 0.11
+%     nan 0.67 0.24 0.14 0.13 nan
+%     0.20 0.10 0.13 0.12 0.08 0.07
+%     0.37 0.16 0.16 0.14 0.08 nan
+%     nan 1.13 0.29 0.14 0.21 nan
+%     ];
+%   
+%   time_VINS = [
+%     10.12 23.286343474729243 34.45716357557306 23.161929366972476 63.54280540054348 31.66453847816673;
+%     9.920849166891589 22.658193540204355 34.19164716923077 23.13870004197531 61.07770836537196 32.193929095513106;
+%     10.538878176812892 11.728531555213374 32.49234006077587 22.80714456904541 71.325129869533 62.919931751544574
+%     9.748879009964414 22.02041862405063 26.94485186793612 22.790130780653115 63.11419262795276 25.552754641366224
+%     9.58671661646926 22.157435284468665 29.633627712292004 22.702577067217632 60.13781228634362 17.015873227668845
+%     8.793656197074954 23.247456882651214 25.772469131934564 20.864116554600173 64.48724021374571 43.09663759905831
+%     8.954884050290136 21.973954 19.82569783580247 21.652605348717948 56.21554189344263 76.32892773809525
+%     nan 21.243677938609846 17.265912877166915 20.56323701805475 44.3186230689013 nan
+%     8.456355065132223 23.957648742042753 24.185243483826877 21.027745728869373 57.70985057243197 23.028449354226023
+%     8.736827900592795 23.52646850516854 22.99945402058695 21.825285956313266 51.80080331031544 nan
+%     nan 21.485682449552236 13.26667232305999 21.415750553970224 44.33911163067695 nan
+%     ];
+%   
+%   VINS_color = {
+%     [1 0.84 0];
+%     [0.184 0.078 0.635];
+%     [0 0 0];
+%     [1 0 0];
+%     [0 1 0];
+%     [0.9 0.7 0.3];
+%     };
+%   
+%   close all
+%   for mn=1:length(metric_type)
+%     figure;
+%     hold on
+%     for tn=1:3
+%       scatter_syl = marker_styl{tn};
+%       scatter_syl = scatter_syl(length(scatter_syl):end);
+%       scatter(scatter_buf{mn,tn}(1,:), scatter_buf{mn,tn}(2,:), ...
+%         scatter_syl, 'MarkerEdgeColor', marker_color{tn});
+%       j = boundary(scatter_buf{mn,tn}(1,:)', scatter_buf{mn,tn}(2,:)', 0.5);
+%       plot(scatter_buf{mn,tn}(1,j), scatter_buf{mn,tn}(2,j), [':' scatter_syl], ...
+%         'color', marker_color{tn});
+%     end
+%     for tn=1:length(mtd_VINS)
+%       vld_x = time_VINS(~isnan(time_VINS(:,tn)), tn);
+%       vld_y = RMSE_VINS(~isnan(RMSE_VINS(:,tn)), tn);
+%       scatter(vld_x, vld_y, ...
+%         'x', 'MarkerEdgeColor', VINS_color{tn});
+%       j = boundary(vld_x, vld_y, 0.5);
+%       plot(vld_x(j), vld_y(j), ':', 'color', VINS_color{tn});
+%     end
+%     %
+%     legend_style = gobjects(3+length(mtd_VINS),1);
+%     for i=1:3
+%       scatter_syl = marker_styl{i};
+%       scatter_syl = scatter_syl(length(scatter_syl):end);
+%       legend_style(i) = plot(nan, nan, scatter_syl, 'color', marker_color{i});
+%     end
+%     for i=1:length(mtd_VINS)
+%       scatter_syl = 'x';
+%       legend_style(3+i) = plot(nan, nan, scatter_syl, 'color', VINS_color{i});
+%     end
+%     %     legend(legend_style([3:4, 1:2, 5:6]), legend_arr{[3:4, 1:2, 5:6]}, 'Location', 'best')
+%     %     legend(legend_style([2,3,1]), legend_arr{[2,3,1]}, 'Location', 'best')
+%     %     legend(legend_style([2,3,1,6]), legend_arr{[2,3,1,6]}, 'Location', 'best')
+%     %     legend(legend_style([3,1,2,6]), legend_arr{[3,1,2,6]}, 'Location', 'best')
+%     legend(legend_style, {'ORB'; 'SVO2'; 'DSO'; 'svomsf'; 'msckf'; 'okvis'; 'rovio'; 'vinsmono'; 'svogtsam'}, 'Location', 'best')
+%     %
+%     xlabel('Average Tracking Latency (ms)')
+%     %     xlabel('Tracking Time per Frame (ms)')
+%     %   ylabel(metric_type{mn})
+%     switch metric_type{mn}
+%       case 'TrackLossRate'
+%         %       ylim([0 100])
+%         %         set(gca, 'YScale', 'log')
+%         ylabel('Un-Tracked Frame (%)')
+%       case 'RMSE'
+%         %             ylim([0.02 0.24])
+%         set(gca, 'YScale', 'log')
+%         ylabel('RMSE (m)')
+%       case 'abs\_orient'
+%         %
+%       case 'RPE3'
+%         %         ylim([0.005 0.05])
+%         set(gca, 'YScale', 'log')
+%         ylabel('RPE (m/s)')
+%       case 'ROE3'
+%         %         ylim([0.05 0.5])
+%         set(gca, 'YScale', 'log')
+%         ylabel('ROE (deg/s)')
+%     end
+%   end
   
 end
 
 %% print out latex table
-slam_mtd_order = [2, 3, 1, 4:6];
-% slam_mtd_order = [2, 3, 1, 4];
-% slam_mtd_order = [3, 1:2, 6:8, 4:5];
-% slam_mtd_order = [3:5, 1, 2, 6:8];
-% slam_mtd_order = [3, 4, 1, 2, 5:7];
-% slam_mtd_order = [1:length(slam_path_list)];
-%
 for i=1:length(metric_type)
   disp(['==================' metric_type{i} '=================='])
   avg_buf = cell(length(slam_path_list), 1);

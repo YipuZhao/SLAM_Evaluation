@@ -5,10 +5,10 @@ addpath('/mnt/DATA/SDK/altmany-export_fig');
 addpath('/mnt/DATA/SDK/aboxplot');
 
 % set up parameters for each benchmark
-benchMark = 'Hololens_RAL19_FastMo_OnlFAST'
-% 'EuRoC_RAL19_FastMo_OnlFAST' % 'EuRoC_RAL19_Jetson' % 
-% 'FPV_RAL19_FastMo_OnlFAST' % 
-% 'EuRoC_Mono_RAL19_FastMo_OnlFAST' 
+benchMark = 'Hololens_TRO21_FastMo_OnlFAST'
+% 'EuRoC_TRO21_FastMo_OnlFAST' % 'EuRoC_TRO21_Jetson' % 
+% 'FPV_TRO21_FastMo_OnlFAST' % 
+% 'EuRoC_Mono_TRO21_FastMo_OnlFAST' 
  
 setParam
 

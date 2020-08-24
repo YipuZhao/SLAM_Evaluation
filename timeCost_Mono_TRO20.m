@@ -5,10 +5,10 @@ addpath('/mnt/DATA/SDK/altmany-export_fig');
 addpath('/mnt/DATA/SDK/aboxplot');
 
 % set up parameters for each benchmark
-benchMark = 'EuRoC_TRO19_OnDevice_Euclid' % 
-% 'NUIM_TRO19_Mono' % 'EuRoC_TRO19_Mono' % 'TUM_RGBD_TRO19_Mono' % 
+benchMark = 'EuRoC_TRO20_OnDevice_Euclid' % 
+% 'NUIM_TRO20_Mono' % 'EuRoC_TRO20_Mono' % 'TUM_RGBD_TRO20_Mono' % 
 % 'EuRoC_Propo_OnDevice_Euclid'
-% 'EuRoC_TRO19_OnDevice_X200CA' % 'EuRoC_TRO19_OnDevice_Jetson' % 
+% 'EuRoC_TRO20_OnDevice_X200CA' % 'EuRoC_TRO20_OnDevice_Jetson' % 
 %
 
 setParam

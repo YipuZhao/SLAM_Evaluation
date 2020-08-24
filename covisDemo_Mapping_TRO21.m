@@ -3,8 +3,8 @@ close all
 
 addpath('/mnt/DATA/SDK/altmany-export_fig');
 
-data_path = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_Stereo_BA_logging_Speedx0.3/ObsNumber_800_Round1/';
-% data_path = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB2_Baseline_BALogging/ObsNumber_800_Round1/';
+data_path = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/ORB_Stereo_BA_logging_Speedx0.3/ObsNumber_800_Round1/';
+% data_path = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/ORB2_Baseline_BALogging/ObsNumber_800_Round1/';
 
 % method_list = { 'ORB'; 'Rnd'; 'Long'; 'GF_c50'; };
 % marker_styl = { '-bo'; '-ro'; '-go'; '-ko'; };
@@ -29,7 +29,7 @@ seq_list = {
 font_size = 12;
 mark_size = 5;
 figure_size = [1 1 1000 1000];
-save_path = './output/RAL19'
+save_path = './output/TRO21'
 
 for j= 1:length(seq_list)
   

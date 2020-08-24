@@ -1,8 +1,0 @@
-python evaluate_ate.py /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_GT/00_tum.txt /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_GF_SLAM/Test2_100percent_Round1/Seq00_10_KeyFrameTrajectory.txt --verbose --plot tmp.png --scale 15.64
-
-python evaluate_ate.py /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_GT/00_tum.txt /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_REF_SLAM/Test1_Round1/Seq00_10_KeyFrameTrajectory.txt --verbose --plot tmp.png --scale 15.64
-
-
-python evaluate_rpe.py /home/yipuzhao/ros_workspace/package_dir/ORB_Data/KITTI_POSE_GT/02_tum.txt /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_GF_SLAM/Obs_Ratio_Test/AllFrame_20percent_Round1/Seq02_10_AllFrameTrajectory.txt
-
-python evaluate_rpe.py /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_GT/00_tum.txt /mnt/DATA/GoogleDrive/ORB_SLAM/KITTI_POSE_REF_SLAM/Test1_Round1/Seq00_10_KeyFrameTrajectory.txt

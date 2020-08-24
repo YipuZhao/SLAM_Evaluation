@@ -4,7 +4,7 @@ close all
 addpath('/mnt/DATA/SDK/altmany-export_fig');
 
 %% simu results
-% data_path = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Lazier_Greedy_Simulation';
+% data_path = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Lazier_Greedy_Simulation';
 data_path = '/home/yipuzhao/ros_workspace/package_dir/GF_ORB_SLAM/tools/simu';
 % [X, Y] = meshgrid(100:200:3000, 10:10:80);
 [X, Y] = meshgrid(500:250:2500, 40:20:180);

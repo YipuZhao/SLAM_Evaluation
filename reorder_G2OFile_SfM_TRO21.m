@@ -1,11 +1,11 @@
 clear all
 close all
 
-raw_data    = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/SfM/venice/venice_inc.txt'
-proc_data   = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/SfM/venice/venice.txt'
+raw_data    = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/SfM/venice/venice_inc.txt'
+proc_data   = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/SfM/venice/venice.txt'
 %
-% raw_data    = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/SfM/newcollege/newcollege3500_inc.g2o'
-% proc_data   = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/SfM/newcollege/newcollege3500_mono_sub.txt'
+% raw_data    = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/SfM/newcollege/newcollege3500_inc.g2o'
+% proc_data   = '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/SfM/newcollege/newcollege3500_mono_sub.txt'
 
 graph_raw = loadGraph(raw_data, false);
 

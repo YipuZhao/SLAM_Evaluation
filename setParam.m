@@ -425,7 +425,7 @@ switch benchMark
     
     %% TRO 2019 related
     
-  case 'EuRoC_TRO19_Mono'
+  case 'EuRoC_TRO20_Mono'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -524,23 +524,23 @@ switch benchMark
     
     slam_path_list  = {
       %       '/mnt/DATA/tmp/EuRoC/Lmk_1500/ORB_Debug/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/ORBv1_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/EuRoC/ORBv2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/DSO_Mono_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/EuRoC/Inlier_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/ORBv1_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORBv2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/DSO_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/Inlier_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/vins_Mono_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/rovio_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/vins_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/rovio_Mono_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_600/ORBv1_info_measErr_incSample/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv1_info_measErr_incSample/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_600/ORBv1_info_measErr_incSample/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv1_info_measErr_incSample/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_600/ORBv1_random/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv1_random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_600/ORBv1_random/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv1_random/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_600/ORBv1_longlife/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv1_longlife/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_600/ORBv1_longlife/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv1_longlife/';
       };
     
     pipeline_type = {
@@ -608,10 +608,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/TRO19/EuRoC/'
+    save_path           = './output/TRO20/EuRoC/'
     %
     
-  case 'EuRoC_TRO19_OnDevice_Euclid'
+  case 'EuRoC_TRO20_OnDevice_Euclid'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -697,19 +697,19 @@ switch benchMark
       ];
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/ORBv1_Baseline_lvl3_fac1.6/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/ORBv1_Baseline_lvl3_fac2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/DSO_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/ORBv1_Baseline_lvl3_fac1.6/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/ORBv1_Baseline_lvl3_fac2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/DSO_Mono_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_400/ORBv1_info_measErr_incSample_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_600/ORBv1_info_measErr_incSample_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_400/ORBv1_info_measErr_noPrior_25ms/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_600/ORBv1_info_measErr_noPrior_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_800/ORBv1_info_measErr_incSample/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_600/ORBv1_random/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/Lmk_600/ORBv1_longlife/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_400/ORBv1_info_measErr_incSample_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_600/ORBv1_info_measErr_incSample_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_400/ORBv1_info_measErr_noPrior_25ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_600/ORBv1_info_measErr_noPrior_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_800/ORBv1_info_measErr_incSample/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_600/ORBv1_random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/Lmk_600/ORBv1_longlife/';
       };
     
     pipeline_type = {
@@ -766,7 +766,7 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/TRO19/Euclid/'
+    save_path           = './output/TRO20/Euclid/'
     %
     
     %     % additional results grabbed from Jeff's VINS benchmarking paper
@@ -834,7 +834,7 @@ switch benchMark
     %       nan, 37.98306740369231, 75.63585353057852, 109.9514429991251, nan;
     %       ];
     
-  case 'EuRoC_TRO19_OnDevice_X200CA'
+  case 'EuRoC_TRO20_OnDevice_X200CA'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -920,20 +920,20 @@ switch benchMark
       ];
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/ORBv1_Baseline_lvl8/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/ORBv1_Baseline_lvl3_fac1.6/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/ORBv2_Baseline_lvl3_fac2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/SVO2_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/DSO_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/ORBv1_Baseline_lvl8/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/ORBv1_Baseline_lvl3_fac1.6/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/ORBv2_Baseline_lvl3_fac2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/SVO2_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/DSO_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_400/ORBv1_info_measErr_incSample_25ms/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_600/ORBv1_info_measErr_incSample_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_400/ORBv1_info_measErr_noPrior_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_600/ORBv1_info_measErr_noPrior_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_800/ORBv1_info_measErr_incSample/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_600/ORBv1_random/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/X200CA/Lmk_600/ORBv1_longlife/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_400/ORBv1_info_measErr_incSample_25ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_600/ORBv1_info_measErr_incSample_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_400/ORBv1_info_measErr_noPrior_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_600/ORBv1_info_measErr_noPrior_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_800/ORBv1_info_measErr_incSample/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_600/ORBv1_random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/X200CA/Lmk_600/ORBv1_longlife/';
       };
     
     pipeline_type = {
@@ -982,10 +982,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/TRO19/X200CA/'
+    save_path           = './output/TRO20/X200CA/'
     %
     
-  case 'EuRoC_TRO19_OnDevice_Jetson'
+  case 'EuRoC_TRO20_OnDevice_Jetson'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -1071,19 +1071,19 @@ switch benchMark
     baseline_orb = 1;
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/ORBv1_Baseline_lvl3_fac1.6/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/ORBv1_Baseline_lvl3_fac2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/DSO_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/ORBv1_Baseline_lvl3_fac1.6/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/ORBv1_Baseline_lvl3_fac2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/DSO_Mono_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_400/ORBv1_info_measErr_incSample_25ms/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_600/ORBv1_info_measErr_incSample_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_400/ORBv1_info_measErr_noPrior_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_600/ORBv1_info_measErr_noPrior_25ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_800/ORBv1_info_measErr_incSample/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_800/ORBv1_random/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Jetson/Lmk_800/ORBv1_longlife/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_400/ORBv1_info_measErr_incSample_25ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_600/ORBv1_info_measErr_incSample_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_400/ORBv1_info_measErr_noPrior_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_600/ORBv1_info_measErr_noPrior_25ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_800/ORBv1_info_measErr_incSample/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_800/ORBv1_random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/Lmk_800/ORBv1_longlife/';
       };
     
     pipeline_type = {
@@ -1131,10 +1131,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/TRO19/Jetson/'
+    save_path           = './output/TRO20/Jetson/'
     %
     
-  case 'EuRoC_TRO19_OnDevice_Odroid'
+  case 'EuRoC_TRO20_OnDevice_Odroid'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -1214,9 +1214,9 @@ switch benchMark
       ];
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Odroid/ORBv1_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Odroid/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Odroid/DSO_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Odroid/ORBv1_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Odroid/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Odroid/DSO_Mono_Baseline/';
       };
     
     pipeline_type = {
@@ -1245,10 +1245,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/TRO19/Odroid/'
+    save_path           = './output/TRO20/Odroid/'
     %
     
-  case 'EuRoC_TRO19_Stereo'
+  case 'EuRoC_TRO20_Stereo'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -1356,29 +1356,29 @@ switch benchMark
     baseline_orb = 2;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/vanilla_ORBv2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/delayed_ORBv2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/SVO2_Stereo_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/okvis_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/OKVIS_Stereo_Baseline_redo/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/msckf_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/msckf_Stereo_Baseline_v2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/vanilla_ORBv2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/delayed_ORBv2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/SVO2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/okvis_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/OKVIS_Stereo_Baseline_redo/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/msckf_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/msckf_Stereo_Baseline_v2/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_incSample_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_info_dispErr_v4/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_incSample_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_info_dispErr_v4/';
       %       '/mnt/DATA/tmp/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_v5/';
       %       '/mnt/DATA/tmp/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_v6/';
-      %             '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_info_dispErr_robust_v4/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Random_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Random_v4/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Longlife_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Longlife_v4/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_v10/';
-      %             '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_fin/'
+      %             '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_info_dispErr_robust_v4/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Random_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Random_v4/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Longlife_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Longlife_v4/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_v10/';
+      %             '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_fin/'
       % '/mnt/DATA/tmp/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_v10_1/';
       % '/mnt/DATA/tmp/EuRoC/Lmk_800/ORBv2_Stereo_info_dispErr_v11/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Random_v10/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Longlive_v10/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Random_v10/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/Lmk_800/ORBv2_Stereo_Longlive_v10/';
       };
     
     pipeline_type = {
@@ -1464,10 +1464,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/TRO19/EuRoC/'
+    save_path           = './output/TRO20/EuRoC/'
     %
     
-  case 'TUM_VI_TRO19_Stereo'
+  case 'TUM_VI_TRO20_Stereo'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -1549,27 +1549,27 @@ switch benchMark
     baseline_orb = 2;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/vanilla_ORBv2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/delayed_ORBv2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/vanilla_ORBv2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/delayed_ORBv2_Stereo_Baseline/';
       %             '/mnt/DATA/tmp/TUM_VI/ORBv2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/SVO2_Stereo_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/OKVIS_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/OKVIS_Stereo_Baseline_old/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/msckf_Stereo_Baseline_v2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/SVO2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/OKVIS_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/OKVIS_Stereo_Baseline_old/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/msckf_Stereo_Baseline_v2/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_incSample_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_lowSample_15ms_v3/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_incSample_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_lowSample_15ms_v3/';
       % '/mnt/DATA/tmp/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_15ms_v2/';%
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_15ms_fullPrior/';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_15ms_noPrior/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_random_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_random_15ms_v3/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_longlive_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_longlive_15ms_v3/'
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_15ms_fullPrior/';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_15ms_noPrior/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_random_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_random_15ms_v3/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_longlive_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/Lmk_600/ORBv2_Stereo_longlive_15ms_v3/'
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop//TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_v10/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop//TUM_VI/Lmk_600/ORBv2_Stereo_random_v10/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop//TUM_VI/Lmk_600/ORBv2_Stereo_longlive_v10/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop//TUM_VI/Lmk_600/ORBv2_Stereo_info_dispErr_v10/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop//TUM_VI/Lmk_600/ORBv2_Stereo_random_v10/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop//TUM_VI/Lmk_600/ORBv2_Stereo_longlive_v10/';
       };
     
     pipeline_type = {
@@ -1639,12 +1639,12 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/TUM_VI_POSE_GT'
-    save_path           = './output/TRO19/TUM_VI/'
+    save_path           = './output/TRO20/TUM_VI/'
     %
     
     
     
-  case 'KITTI_TRO19_Stereo'
+  case 'KITTI_TRO20_Stereo'
     %
     plot3DTrack = 0;
     fps = 10;
@@ -1739,22 +1739,22 @@ switch benchMark
     baseline_orb = 2;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/vanilla_ORBv2_Stereo_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/vanilla_ORBv2_Stereo_Baseline_v2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/delayed_ORBv2_Stereo_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/delayed_ORBv2_Stereo_Baseline_v2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/SVO2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/DSO_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/vanilla_ORBv2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/vanilla_ORBv2_Stereo_Baseline_v2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/delayed_ORBv2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/delayed_ORBv2_Stereo_Baseline_v2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/SVO2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/DSO_Stereo_Baseline/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1500/ORBv2_Stereo_GF/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1000/ORBv2_Stereo_GF_v2/';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1000/ORBv2_GF_Stereo_Prior/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1500/ORBv2_Stereo_Random/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1500/ORBv2_Stereo_Longlive/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1500/ORBv2_Stereo_GF/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1000/ORBv2_Stereo_GF_v2/';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1000/ORBv2_GF_Stereo_Prior/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1500/ORBv2_Stereo_Random/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1500/ORBv2_Stereo_Longlive/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1000/ORBv2_Stereo_GF/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1000/ORBv2_Stereo_Random/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/KITTI/lmk1000/ORBv2_Stereo_Long/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1000/ORBv2_Stereo_GF/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1000/ORBv2_Stereo_Random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/KITTI/lmk1000/ORBv2_Stereo_Long/';
       };
     
     pipeline_type = {
@@ -1819,12 +1819,12 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/KITTI_POSE_GT'
-    save_path           = './output/TRO19/KITTI/'
+    save_path           = './output/TRO20/KITTI/'
     %
     
     
     
-  case 'RobotCar_TRO19_Stereo'
+  case 'RobotCar_TRO20_Stereo'
     %
     plot3DTrack = 1;
     fps = 5;
@@ -1894,16 +1894,16 @@ switch benchMark
     baseline_orb = 2;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/vanilla_ORBv2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/delayed_ORBv2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/SVO2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/vanilla_ORBv2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/delayed_ORBv2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/SVO2_Stereo_Baseline/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/OKVIS_Stereo_Baseline_redo/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/msckf_Stereo_Baseline_v2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/OKVIS_Stereo_Baseline_redo/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/msckf_Stereo_Baseline_v2/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/lmk1000/ORBv2_Stereo_GF/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/lmk1000/ORBv2_Stereo_Random_v10/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/RobotCar/lmk1000/ORBv2_Stereo_Longlive_v10/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/lmk1000/ORBv2_Stereo_GF/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/lmk1000/ORBv2_Stereo_Random_v10/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/RobotCar/lmk1000/ORBv2_Stereo_Longlive_v10/';
       };
     
     pipeline_type = {
@@ -1953,12 +1953,12 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Oxford_Robocar_POSE_GT'
-    save_path           = './output/TRO19/RobotCar/'
+    save_path           = './output/TRO20/RobotCar/'
     %
     
     
     
-  case 'TUM_VI_TRO19_Mono'
+  case 'TUM_VI_TRO20_Mono'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -2034,8 +2034,8 @@ switch benchMark
     round_num = 1;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/ORBv1_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/svo2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/ORBv1_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/svo2_Mono_Baseline/';
       '/mnt/DATA/tmp/TUM_VI/DSO_Mono_Baseline/';
       };
     
@@ -2059,10 +2059,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/TUM_VI_POSE_GT'
-    save_path           = './output/TRO19/TUM_VI/'
+    save_path           = './output/TRO20/TUM_VI/'
     %
     
-  case 'TUM_RGBD_TRO19_Mono'
+  case 'TUM_RGBD_TRO20_Mono'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -2141,20 +2141,20 @@ switch benchMark
       ];
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/ORBv1_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/DSO_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/ORBv1_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/DSO_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_300/ORBv1_info_measErr_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_400/ORBv1_info_measErr_15ms/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_400/ORBv1_info_measErr_15ms_fullPrior/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_600/ORBv1_info_measErr_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_300/ORBv1_info_measErr_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_400/ORBv1_info_measErr_15ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_400/ORBv1_info_measErr_15ms_fullPrior/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_600/ORBv1_info_measErr_15ms/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_400/ORBv1_random_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_600/ORBv1_random_15ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_400/ORBv1_random_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_600/ORBv1_random_15ms/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_400/ORBv1_longlife_15ms/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_RGBD/Lmk_600/ORBv1_longlife_15ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_400/ORBv1_longlife_15ms/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_RGBD/Lmk_600/ORBv1_longlife_15ms/';
       };
     
     pipeline_type = {
@@ -2200,10 +2200,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/TUM_RGBD_POSE_GT'
-    save_path           = './output/TRO19/TUM_RGBD/'
+    save_path           = './output/TRO20/TUM_RGBD/'
     %
     
-  case 'NUIM_TRO19_Mono'
+  case 'NUIM_TRO20_Mono'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -2282,22 +2282,22 @@ switch benchMark
     baseline_orb = 1; % 2;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/ORBv1_Baseline_redo/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/ORB2_RGBD_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/DSO_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/ORBv1_Baseline_redo/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/ORB2_RGBD_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/DSO_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_400/ORBv1_info_measErr/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_600/ORBv1_info_measErr/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_600/ORBv2_info_dispErr/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_400/ORBv1_info_measErr/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_600/ORBv1_info_measErr/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_600/ORBv2_info_dispErr/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_400/ORBv1_random/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_600/ORBv1_random/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_600/ORBv2_random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_400/ORBv1_random/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_600/ORBv1_random/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_600/ORBv2_random/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_400/ORBv1_longlife/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_600/ORBv1_longlife/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/NUIM/Lmk_600/ORBv2_longlife/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_400/ORBv1_longlife/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_600/ORBv1_longlife/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/NUIM/Lmk_600/ORBv2_longlife/';
       };
     
     
@@ -2359,7 +2359,7 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/NUIM_POSE_GT'
-    save_path           = './output/TRO19/NUIM/'
+    save_path           = './output/TRO20/NUIM/'
     %
     
     
@@ -2531,7 +2531,7 @@ switch benchMark
       '/mnt/DATA/Dropbox/PhD/Projects/Line_SLAM/Experimental_ECCV18/EuRoC/ORBSLAM_lvl4/';
       '/mnt/DATA/Dropbox/PhD/Projects/Line_SLAM/Experimental_ECCV18/EuRoC/ORBSLAM_lvl8/';
       '/mnt/DATA/Dropbox/PhD/Projects/Line_SLAM/Experimental_ECCV18/EuRoC/SVO2/';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/SVO2_Stereo_Baseline/';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/SVO2_Stereo_Baseline/';
       };
     
     legend_arr = {
@@ -2974,10 +2974,10 @@ switch benchMark
     % '/mnt/DATA/tmp/XWing/ORBv1_MapHash_LargeWindow/Site_1/';
     % '/mnt/DATA/tmp/XWing/ORBv1_MapHash_LargeWindow/Site_2/';
     % '/mnt/DATA/tmp/XWing/ORBv1_Baseline_LargeWindow/Site_2/';
-    %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/NewCollege/ORBv1_Maphash_tableSelect_v3/';
+    %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/NewCollege/ORBv1_Maphash_tableSelect_v3/';
     %       %
-    %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/NewCollege/Lmk_800/GoodFeature_v3/';
-    %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/Lmk_800/ORBv1_info_measErr_MapHash_v3/';
+    %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/NewCollege/Lmk_800/GoodFeature_v3/';
+    %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/Lmk_800/ORBv1_info_measErr_MapHash_v3/';
     };
   
   pipeline_type = {
@@ -3308,9 +3308,9 @@ switch benchMark
     baseline_orb = 1; % 0; %
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/ORBv1_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/DSO_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/ORBv1_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/DSO_Mono_Baseline/';
       %
       %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_ICRA19/EuRoC/T1_B10/';
       %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_ICRA19/EuRoC/T4_B10/';
@@ -3456,16 +3456,16 @@ switch benchMark
     baseline_orb = 2;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/ORBv1_Baseline_lvl3_fac2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/ORBv1_MapHash_tableSelect_v3/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/SVO2_Mono_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/DSO_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/ORBv1_Baseline_lvl3_fac2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/ORBv1_MapHash_tableSelect_v3/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/SVO2_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/DSO_Mono_Baseline/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/vins_Mono_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/rovio_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/vins_Mono_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/rovio_Mono_Baseline/';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/OnDevice/Lmk_400/ORBv1_info_measErr_MapHash_v3/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/Lmk_400/ORBv1_info_measErr_fac2_25ms/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/OnDevice/Lmk_400/ORBv1_info_measErr_MapHash_v3/';
       };
     
     pipeline_type = {
@@ -3551,7 +3551,7 @@ switch benchMark
     
     %% RAL 2019 related
     
-  case 'RobotCar_RAL19_Desktop'
+  case 'RobotCar_TRO21_Desktop'
     %
     plot3DTrack = 1;
     fps = 5;
@@ -3609,7 +3609,7 @@ switch benchMark
     baseline_orb = 0;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/RobotCar/vins_Mono_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/RobotCar/vins_Mono_Baseline/';
       };
     
     pipeline_type = {
@@ -3645,10 +3645,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Oxford_Robocar_POSE_GT'
-    save_path           = './output/RAL19/Desktop/'
+    save_path           = './output/TRO21/Desktop/'
     %
     
-  case 'Hololens_RAL19_Desktop'
+  case 'Hololens_TRO21_Desktop'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -3704,8 +3704,8 @@ switch benchMark
     baseline_orb = 1;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/ORB2_Stereo_Baseline/'
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/vins_Mono_Baseline/'
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/ORB2_Stereo_Baseline/'
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/vins_Mono_Baseline/'
       };
     
     pipeline_type = {
@@ -3748,10 +3748,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Hololens_POSE_GT'
-    save_path           = './output/RAL19/Hololens/'
+    save_path           = './output/TRO21/Hololens/'
     %
     
-  case 'NewCollege_RAL19_Desktop'
+  case 'NewCollege_TRO21_Desktop'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -3801,8 +3801,8 @@ switch benchMark
     baseline_orb = 1;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/NewCollege/ORB2_Stereo_Baseline/'
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/NewCollege/vins_Mono_Baseline/'
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/NewCollege/ORB2_Stereo_Baseline/'
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/NewCollege/vins_Mono_Baseline/'
       };
     
     pipeline_type = {
@@ -3845,10 +3845,10 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/NewCollege_POSE_GT'
-    save_path           = './output/RAL19/NewCollege/'
+    save_path           = './output/TRO21/NewCollege/'
     %
     
-  case 'EuRoC_RAL19_Desktop'
+  case 'EuRoC_TRO21_Desktop'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -3930,7 +3930,7 @@ switch benchMark
     baseline_orb = 0 % 2;
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB2_Stereo_Baseline/'
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB2_Stereo_Baseline/'
       '/mnt/DATA/tmp/EuRoC/GF_Stereo_pyr3_v3/';
       '/mnt/DATA/tmp/EuRoC/GF_Stereo_pyr8_v3/';
       '/mnt/DATA/tmp/EuRoC/GF_Stereo_pyr8_v4/';
@@ -3978,11 +3978,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC/'
+    save_path           = './output/TRO21/EuRoC/'
     %
     
     
-  case 'EuRoC_Mono_RAL19_FastMo_Demo'
+  case 'EuRoC_Mono_TRO21_FastMo_Demo'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -4056,15 +4056,15 @@ switch benchMark
     fast_mo_list = [4.0]; % [1.0] %
     
     slam_path_list  = {
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/DSO_Mono_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/svo_Mono_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/DSO_Mono_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/svo_Mono_Speedx';
       %
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_BaseBA_Mono_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_BaseBA_Mono_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_SWF_Mono_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Covis_Mono_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAntic_Mono_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticv2_Mono_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_BaseBA_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_BaseBA_Mono_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_SWF_Mono_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Covis_Mono_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAntic_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticv2_Mono_Speedx';
       };
     
     pipeline_type = {
@@ -4113,11 +4113,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/Demo/'
+    save_path           = './output/TRO21/Demo/'
     %
     
     
-  case 'EuRoC_Mono_RAL19_FastMo_OnlFAST'
+  case 'EuRoC_Mono_TRO21_FastMo_OnlFAST'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -4190,17 +4190,17 @@ switch benchMark
     fast_mo_list = [1.0 2.0 3.0 4.0 5.0]; % [1.0, 3.0, 5.0] % [0.5 1.0 1.5]; %
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/DSO_Mono_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/svo_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/DSO_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/svo_Mono_Speedx';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_BaseBA_Mono_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_BaseBA_Mono_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_SWF_Mono_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Covis_Mono_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAntic_Mono_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticv2_Mono_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticv3_Mono_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraph_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_BaseBA_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_BaseBA_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_SWF_Mono_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Covis_Mono_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAntic_Mono_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticv2_Mono_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticv3_Mono_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraph_Mono_Speedx';
       '/mnt/DATA/tmp/EuRoC/GF_GGraph_Mono_Speedx';
       };
     
@@ -4250,11 +4250,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC_Mono_PC/'
+    save_path           = './output/TRO21/EuRoC_Mono_PC/'
     %
     
     
-  case 'EuRoC_RAL19_FastMo_PreFAST'
+  case 'EuRoC_TRO21_FastMo_PreFAST'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -4329,75 +4329,75 @@ switch benchMark
     fast_mo_list = [1.0 2.0 3.0 4.0 5.0]; % [1.0, 3.0, 5.0] % [0.5 1.0 1.5]; %
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/msckf_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/iceBA_Stereo_Extra_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_IMU_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/svo_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/msckf_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/iceBA_Stereo_Extra_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/vins_Stereo_IMU_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/vins_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/svo_Stereo_Speedx';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_Stereo_preP_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Stereo_preP_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_SWF_Stereo_preP_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Covis_Stereo_preP_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraph_Stereo_preP_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAntic_Stereo_preP_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticV4_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticV5_Stereo_preP_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNL_Stereo_preP_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNLv2_Stereo_preP_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNH_Stereo_preP_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/tmp/GF_GGraphAnticNoisyV2_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_SWF_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_Covis_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraph_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAntic_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticV4_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticV5_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticNL_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_GGraphAnticNLv2_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticNH_Stereo_preP_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/tmp/GF_GGraphAnticNoisyV2_Stereo_preP_Speedx';
       %
       % DEBUG results
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v2/GF_BaseBA_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Stereo_pyr8_preLv2_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v2/GF_SWF_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v2/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v2/GF_BaseBA_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Stereo_pyr8_preLv2_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v2/GF_SWF_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v2/GF_Covis_Stereo_Speedx';
       %       '/mnt/DATA/tmp/EuRoC/GF_GGraph_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v2/GF_GGraphInc_v2_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v2/GF_GGraphInc_v3_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v2/GF_GGraphInc_v4_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v2/GF_GGraphInc_v2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v2/GF_GGraphInc_v3_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v2/GF_GGraphInc_v4_Stereo_Speedx';
       %
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v3/GF_GGraphInc_numeric_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v3/GF_GGraphInc_analytical_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v3/GF_GGraphInc_predv2_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v3/GF_GGraphInc_numeric_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v3/GF_GGraphInc_analytical_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v3/GF_GGraphInc_predv2_Stereo_Speedx';
       %
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GF_SWF_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GF_Covis_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GF_GGraphInc_numr_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GF_GGraphInc_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GF_GGraphIncAntic_numr_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GF_GGraphIncAntic_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GF_SWF_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GF_Covis_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GF_GGraphInc_numr_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GF_GGraphInc_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GF_GGraphIncAntic_numr_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GF_GGraphIncAntic_anal_Stereo_Speedx';
       %
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_SWF_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_Covis_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphInc_numr_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphInc_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAntic_numr_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAntic_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAnticOL_numr_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAnticOL_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAnticOLv2_numr_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAnticOLv2_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAnticOL_b1_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v4/GFPreP_GGraphIncAnticOL_b3_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v5/GFPreP_GGraphIncAnticOL_b1v1_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v5/GFPreP_GGraphIncAnticOL_b1v2_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v5/GFPreP_GGraphIncAnticOL_b1v3_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_SWF_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_Covis_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphInc_numr_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphInc_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAntic_numr_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAntic_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAnticOL_numr_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAnticOL_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAnticOLv2_numr_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAnticOLv2_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAnticOL_b1_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v4/GFPreP_GGraphIncAnticOL_b3_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v5/GFPreP_GGraphIncAnticOL_b1v1_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v5/GFPreP_GGraphIncAnticOL_b1v2_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v5/GFPreP_GGraphIncAnticOL_b1v3_anal_Stereo_Speedx';
       % %
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v5/GFPreP_GGraphIncAnticOL_b1v1pred_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v5/GFPreP_GGraphIncAnticOL_b1v2pred_anal_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v5/GFPreP_GGraphIncAnticOL_b1v3pred_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v5/GFPreP_GGraphIncAnticOL_b1v1pred_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v5/GFPreP_GGraphIncAnticOL_b1v2pred_anal_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v5/GFPreP_GGraphIncAnticOL_b1v3pred_anal_Stereo_Speedx';
       %
       %
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV1_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV2_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV3_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV4_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV4_2_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV5_Stereo_preP_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Debug_v6/GF_GGraphAnticV6_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV1_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV2_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV3_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV4_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV4_2_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV5_Stereo_preP_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Debug_v6/GF_GGraphAnticV6_Stereo_preP_Speedx';
       };
     
     pipeline_type = {
@@ -4423,8 +4423,8 @@ switch benchMark
       %
       %       'ORB';
       'GF';
-      'GF + SWF';
-      'GF + Covis';
+      'GF + SW';
+      'GF + CV';
       'GF + GG';
       %       'GF + GG_{ant}';
       %       'GF + GG_{antNL}';
@@ -4495,11 +4495,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC_PC_PreFAST/'
+    save_path           = './output/TRO21/EuRoC_PC_PreFAST/'
     %
     
     
-  case 'EuRoC_RAL19_FastMo_OnlFAST'
+  case 'EuRoC_TRO21_FastMo_OnlFAST'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -4553,7 +4553,7 @@ switch benchMark
       0;
       ];
     
-    table_index = [3, 2, 2, 4, 5, 1, 1, 1, 1];
+    table_index = [1, 1, 1, 1, 5, 3, 2, 2, 4, ];
     %     table_index = [3, 2, 2, 3, 4, 5, 1, 1, 1, 1, 1];
     % table_index = [2 1 1 1 1 1 1];
     
@@ -4569,40 +4569,35 @@ switch benchMark
     %     benchmark_type = 'KITTI';
     valid_by_duration = false; % true;
     
-    vins_idx = 3;
+    vins_idx = 8; % 3; % due to high frame loss of vins-fusion, we release the failure thres for it
     baseline_num = 9; % 11; % 7; % 5; %
     baseline_orb = 0;
     
     fast_mo_list = [1.0 2.0 3.0 4.0 5.0]; % [1.0, 3.0, 5.0] % [0.5 1.0 1.5]; %
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/msckf_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/iceBA_Stereo_Extra_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_IMU_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/svo_Stereo_Speedx';
-      %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_SWF_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraph_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAntic_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNL_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNLv2_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNLv3_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_SWF_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraph_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAntic_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticNL_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_GGraphAnticNLv2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticNLv3_Stereo_Speedx';
       % '/mnt/DATA/swp_2/GF_GGraphAnticNL_Stereo_Speedx';
-      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNH_Stereo_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticNH_Stereo_Speedx';
+      %
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/ORB_BaseBA_Stereo_Speedx';
+      %
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/msckf_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/iceBA_Stereo_Extra_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/vins_Stereo_IMU_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/vins_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/svo_Stereo_Speedx';
       %
       };
     
     pipeline_type = {
-      'vins';
-      'vins';
-      'vins';
-      %       'vo';
-      'vins';
-      %
       'vo';
       'vo';
       'vo';
@@ -4610,16 +4605,16 @@ switch benchMark
       %       'vo';
       %             'vo';
       'vo';
+      %
+      'vins';
+      'vins';
+      'vins';
+      %       'vo';
+      'vins';
+      %
       };
     
     legend_arr = {
-      'MSC';
-      'ICE';
-      'VIF';
-      %       'VIVis';
-      'SVO';
-      %
-      'ORB';
       'GF';
       'GF+SW';
       'GF+CV';
@@ -4628,37 +4623,47 @@ switch benchMark
       %       'GF+GG_{ant}';
       %       'GF + GG_{antNL}';
       %       'GF + GG_{antNH}';
+      %
+      'ORB';
+      'MSC';
+      'ICE';
+      'VIF';
+      %       'VIVis';
+      'SVO';
       };
     
     marker_styl = {
-      '--o';
-      '--+';
-      '--*';
-      %       '--*';
-      '--d';
-      %
-      ':o';
       ':+';
       ':x';
       ':x';
       %       ':x';
       %             ':s';
       ':s';
+      ':o';
+      %
+      '--o';
+      '--+';
+      '--*';
+      %       '--*';
+      '--d';
+      %
       };
     
     marker_color = {
-      [     0         0    1.0000];
-      [1.0000         0         0];
-      [     0    1.0000         0];
-      %       [1.0000    0.1034    0.7241];
-      [1.0000    0.8276         0];
-      [     0    0.3448         0];
       [0.5172    0.5172    1.0000];
       [0.6207    0.3103    0.2759];
       [     0    1.0000    0.7586];
       %       [     0    0.5172    0.5862];
       %           [     0         0    0.4828];
       [     0         0    0.1724];
+      %
+      [     0    0.3448         0];
+      %
+      [     0         0    1.0000];
+      [1.0000         0         0];
+      [     0    1.0000         0];
+      %       [1.0000    0.1034    0.7241];
+      [1.0000    0.8276         0];
       };
     
     %     marker_color = {
@@ -4679,11 +4684,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC_PC/'
+    save_path           = './output/TRO21/EuRoC_PC/'
     %
     
     
-  case 'Hololens_RAL19_FastMo_Demo'
+  case 'Hololens_TRO21_FastMo_Demo'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -4733,13 +4738,13 @@ switch benchMark
     fast_mo_list = [1.0]; % [0.5 1.0 1.5]; %
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/SVO2_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/hold_ORB2_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_BaseBA_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_SWF_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_GGraphAntic_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_GGraphAnticv2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/SVO2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/hold_ORB2_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_BaseBA_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_SWF_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_GGraphAntic_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_GGraphAnticv2_Stereo_Speedx';
       };
     
     pipeline_type = {
@@ -4775,11 +4780,11 @@ switch benchMark
       };
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Hololens_POSE_GT'
-    save_path           = './output/RAL19/Demo/'
+    save_path           = './output/TRO21/Demo/'
     %
     
     
-  case 'Hololens_RAL19_FastMo_OnlFAST'
+  case 'Hololens_TRO21_FastMo_OnlFAST'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -4829,13 +4834,13 @@ switch benchMark
     fast_mo_list = [1.0, 2.0, 4.0]; % [1.0 2.0 3.0 4.0 5.0]; %
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/SVO2_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/hold_ORB2_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_SWF_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_GGraphAntic_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Hololens/GF_GGraphAnticv2_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/SVO2_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/hold_ORB2_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_SWF_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_GGraphAntic_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Hololens/GF_GGraphAnticv2_Stereo_Speedx';
       
       };
     
@@ -4878,11 +4883,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Hololens_POSE_GT'
-    save_path           = './output/RAL19/Hololens_PC/'
+    save_path           = './output/TRO21/Hololens_PC/'
     %
     
     
-  case 'EuRoC_RAL19_Jetson'
+  case 'EuRoC_TRO21_Jetson_OnlFAST'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -4936,7 +4941,7 @@ switch benchMark
       0;
       ];
     
-    table_index = [3, 2, 2, 4, 5, 1, 1, 1, 1];
+    table_index = [1, 1, 1, 1, 5, 3, 2, 2, 4, ];
     %     table_index = [3, 2, 2, 3, 4, 5, 1, 1, 1, 1, 1];
     % table_index = [2 1 1 1 1 1 1];
     
@@ -4946,49 +4951,58 @@ switch benchMark
     step_length = int32(0); %
     
     % relax robust check condition
-    %     track_loss_ratio = [0.4 0.98];
-    track_loss_ratio = [0.6 0.98];
-    track_fail_thres = 5; % 3 %
+    %     track_loss_ratio = [0.5 0.98]; % [0.6 0.98];
+    %     track_fail_thres = 5; % 3 %
     
+    track_loss_ratio = [0.4 0.98];
     
     sensor_type = 'stereo';
     rel_interval_list = [10];  % [20]; %  [3, 5, 10]; %
     %     benchmark_type = 'KITTI';
     valid_by_duration = false; % true;
     
-    vins_idx = 3;
+    vins_idx = 8; % 3; % due to high frame loss of vins-fusion, we release the failure thres for it
     baseline_num = 9; % 11; % 7; % 5; %
     baseline_orb = 0;
     
     fast_mo_list = [1.0]; % [1.0 2.0 3.0 4.0 5.0]; % [1.0, 3.0, 5.0] %
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/msckf_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/iceBA_Stereo_Extra_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/vins_Stereo_IMU_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/vins_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/svo_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/GF_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/GF_SWF_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_SWF_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_Covis_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/GF_GGraph_Stereo2_Speedx';
+      % '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_GGraph_Stereo_preP_v4_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/GF_GGraph_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/GF_GGraphAntic_Stereo_Speedx';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/ORB_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_SWF_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_GGraph_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_GGraphAntic_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_GGraphAnticV2_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_GGraphAnticNL_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_GGraphAnticNH_Stereo_Speedx';
-      %
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/ORB_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/msckf_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/iceBA_Stereo_Extra_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/vins_Stereo_IMU_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/vins_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/svo_Stereo_Speedx';
       };
     
-    legend_arr = {
-      'MSC';
-      'ICE';
-      'VIF';
-      %       'VIVis';
-      'SVO';
+    pipeline_type = {
+      'vo';
+      'vo';
+      'vo';
+      %       'vo';
+      %       'vo';
+      'vo';
       %
-      'ORB';
+      'vo';
+      'vins';
+      'vins';
+      'vins';
+      %       'vo';
+      'vins';
+      };
+
+    legend_arr = {
       'GF';
       'GF+SW';
       'GF+CV';
@@ -4996,17 +5010,146 @@ switch benchMark
       %       'GF+GG_{ant}';
       %       'GF + GG_{antNL}';
       %       'GF + GG_{antNH}';
+      'ORB';
+      'MSC';
+      'ICE';
+      'VIF';
+      %       'VIVis';
+      'SVO';
+      %
+      };
+    
+    marker_styl = {
+      ':+';
+      ':x';
+      ':x';
+      %       ':x';
+      %       ':s';
+      ':s';
+      ':o';
+      '--o';
+      '--+';
+      '--*';
+      %       '--*';
+      '--d';
+      %
+      };
+    
+    marker_color = {
+      [0.5172    0.5172    1.0000];
+      [0.6207    0.3103    0.2759];
+      [     0    1.0000    0.7586];
+      %       [     0    0.5172    0.5862];
+      %     [     0         0    0.4828];
+      [     0         0    0.1724];
+      [     0    0.3448         0];
+      [     0         0    1.0000];
+      [1.0000         0         0];
+      [     0    1.0000         0];
+      %       [1.0000    0.1034    0.7241];
+      [1.0000    0.8276         0];
+      };
+    
+    %
+    ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
+    save_path           = './output/TRO21/EuRoC_Jetson/'
+    %
+    
+  case 'EuRoC_TRO21_Jetson_PreFAST'
+    %
+    plot3DTrack = 1;
+    fps = 20;
+    baseline_slam_list = {
+      'ObsNumber_130';
+      }
+    
+    %
+    seq_list = {
+      'MH_01_easy';
+      'MH_02_easy';
+      'MH_03_medium';
+      'MH_04_difficult';
+      'MH_05_difficult';
+      'V1_01_easy';
+      'V1_02_medium';
+      'V1_03_difficult';
+      'V2_01_easy';
+      'V2_02_medium';
+      'V2_03_difficult';
+      };
+    
+    seq_duration = [
+      182;
+      150;
+      132;
+      99;
+      111;
+      143;
+      84;
+      105;
+      112;
+      115;
+      115;
+      ];
+    seq_start_time = [
+      0;
+      0;
+      0;
+      0;
+      0;
+      0;
+      0;
+      0;
+      0;
+      0;
+      0;
+      ];
+    
+    table_index = [1 1 1 1];
+    
+    baseline_number_list = [130]; % [130, 150, 200, 400]; %
+    
+    round_num = 10;
+    step_length = int32(0); %
+    
+    % relax robust check condition
+    %     track_loss_ratio = [0.6 0.98];
+    %     track_fail_thres = 5; % 3 %
+    
+    track_loss_ratio = [0.4 0.98];
+    
+    sensor_type = 'stereo';
+    rel_interval_list = [10];  % [20]; %  [3, 5, 10]; %
+    %     benchmark_type = 'KITTI';
+    valid_by_duration = false; % true;
+    
+    vins_idx = -1;
+    baseline_num = 4; % 10; % 6 %
+    baseline_orb = 0;
+    
+    fast_mo_list = [1.0]; % [1.0 2.0 3.0 4.0 5.0]; % [1.0, 3.0, 5.0] %
+    
+    slam_path_list  = {
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_BaseBA_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_SWF_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_Covis_Stereo_preP_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/Jetson/additional/preCompute/GF_GGraph_Stereo_preP_Speedx';
+      };
+    
+    legend_arr = {
+      'GF';
+      'GF + SW';
+      'GF + CV';
+      'GF + GG';
       };
     
     pipeline_type = {
-      'vins';
-      'vins';
-      'vins';
+      %       'vins';
+      %       'vins';
+      %       'vins';
       %       'vo';
-      'vins';
+      'vo';
       %
-      'vo';
-      'vo';
       'vo';
       'vo';
       %       'vo';
@@ -5015,28 +5158,27 @@ switch benchMark
       };
     
     marker_styl = {
-      '--o';
-      '--+';
-      '--*';
+      %       '--o';
+      %       '--+';
       %       '--*';
-      '--d';
+      %       '--*';
+      %       '--d';
       %
-      ':o';
+      %      ':o';
       ':+';
       ':x';
       ':x';
       %       ':x';
-      %       ':s';
+      %             ':s';
       ':s';
       };
-    
     marker_color = {
-      [     0         0    1.0000];
-      [1.0000         0         0];
-      [     0    1.0000         0];
+      %       [     0         0    1.0000];
+      %       [1.0000         0         0];
+      %       [     0    1.0000         0];
       %       [1.0000    0.1034    0.7241];
-      [1.0000    0.8276         0];
-      [     0    0.3448         0];
+      %       [1.0000    0.8276         0];
+      %          [     0    0.3448         0];
       [0.5172    0.5172    1.0000];
       [0.6207    0.3103    0.2759];
       [     0    1.0000    0.7586];
@@ -5047,11 +5189,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC_Jetson/'
+    save_path           = './output/TRO21/EuRoC_Jetson_PreFAST/'
     %
     
     
-  case 'EuRoC_RAL19_FastMo_Demo'
+  case 'EuRoC_TRO21_FastMo_Demo'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -5124,18 +5266,18 @@ switch benchMark
     fast_mo_list = [2.0]; % [1.0] %
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_BaseBA_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_SWF_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraph_Stereo_Speedx';
-%             '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticNLv2_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticDemo_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_GGraphAnticDemoV2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_BaseBA_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_SWF_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraph_Stereo_Speedx';
+%       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_GGraphAnticNLv2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_GGraphAnticDemo_Stereo_Speedx';
+            '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/GF_GGraphAnticDemoV2_Stereo_Speedx';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/ORB_BaseBA_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_BaseBA_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/Jetson/GF_GGraphAntic_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/ORB_BaseBA_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/GF_BaseBA_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Jetson/GF_GGraphAntic_Stereo_Speedx';
       
       };
     
@@ -5173,12 +5315,12 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/Demo/'
+    save_path           = './output/TRO21/Demo/'
     %
     
     
     
-  case 'EuRoC_RAL19_FastMo_MinSet'
+  case 'EuRoC_TRO21_FastMo_MinSet'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -5260,17 +5402,17 @@ switch benchMark
     fast_mo_list = [1.0, 2.0, 4.0];
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/msckf_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/iceBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/iceBA_Stereo_Extra_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/vins_Stereo_IMU_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/vins_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_Extra_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/svo_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/msckf_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/iceBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/iceBA_Stereo_Extra_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/vins_Stereo_IMU_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/vins_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/vins_Stereo_Extra_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/svo_Stereo_Speedx';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/ORB_Stereo_pyr8_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/GF_Stereo_pyr8_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/param_sweep/GF_Stereo_pyr3_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/ORB_Stereo_pyr8_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/GF_Stereo_pyr8_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO21/EuRoC/param_sweep/GF_Stereo_pyr3_Speedx';
       };
     
     pipeline_type = {
@@ -5324,11 +5466,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC/'
+    save_path           = './output/TRO21/EuRoC/'
     %
     
     
-  case 'EuRoC_RAL19_FastMo'
+  case 'EuRoC_TRO21_FastMo'
     %
     plot3DTrack = 1;
     fps = 20;
@@ -5403,19 +5545,19 @@ switch benchMark
     fast_mo_list = [1.0, 2.0, 3.0, 4.0, 5.0];
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/msckf_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/iceBA_Stereo_Extra_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_IMU_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/vins_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/svo_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/msckf_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/iceBA_Stereo_Extra_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/vins_Stereo_IMU_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/vins_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/svo_Stereo_Speedx';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_Stereo_pyr8_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_Stereo_pyr8_preLv2_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/ORB_Stereo_pyr8_prePv2_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Stereo_pyr8_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Stereo_pyr8_preLv2_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Stereo_pyr8_prePv2_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/EuRoC/GF_Stereo_pyr3_preL_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_Stereo_pyr8_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_Stereo_pyr8_preLv2_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/ORB_Stereo_pyr8_prePv2_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Stereo_pyr8_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Stereo_pyr8_preLv2_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Stereo_pyr8_prePv2_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/EuRoC/GF_Stereo_pyr3_preL_Speedx';
       };
     
     pipeline_type = {
@@ -5478,11 +5620,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/EuRoC_POSE_GT'
-    save_path           = './output/RAL19/EuRoC/'
+    save_path           = './output/TRO21/EuRoC/'
     %
     
     
-  case 'FPV_RAL19_FastMo_OnlFAST'
+  case 'FPV_TRO21_FastMo_OnlFAST'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -5550,21 +5692,21 @@ switch benchMark
     fast_mo_list = [1.0]; % [0.5 1.0 1.5]; %
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/msckf_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/iceBA_Stereo_Extra_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/vins_Stereo_IMUv2_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/vins_Stereo_IMU_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/vins_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/svo_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/msckf_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/iceBA_Stereo_Extra_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/vins_Stereo_IMUv2_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/vins_Stereo_IMU_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/vins_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/svo_Stereo_Speedx';
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/ORB_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_SWF_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_GGraph_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_GGraphAntic_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_GGraphAnticNLv2_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/ORB_GGraphAnticNL_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/ORB_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_SWF_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_GGraph_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_GGraphAntic_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_GGraphAnticNLv2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/ORB_GGraphAnticNL_Stereo_Speedx';
       %
       };
     
@@ -5633,11 +5775,11 @@ switch benchMark
       };
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/UZH_FPV_POSE_GT'
-    save_path           = './output/RAL19/FPV/'
+    save_path           = './output/TRO21/FPV/'
     %
     
     
-  case 'FPV_RAL19_FastMo_Demo'
+  case 'FPV_TRO21_FastMo_Demo'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -5699,13 +5841,13 @@ switch benchMark
     fast_mo_list = [1.0]; % [0.5 1.0 1.5]; %
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/ORB_BaseBA_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_BaseBA_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_SWF_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_Covis_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_GGraph_Stereo_Speedx';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_GGraphAntic_Stereo_Speedx';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_RAL19/UZH_FPV/GF_GGraphAnticNLv2_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/ORB_BaseBA_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_BaseBA_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_SWF_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_Covis_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_GGraph_Stereo_Speedx';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_GGraphAntic_Stereo_Speedx';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/UZH_FPV/GF_GGraphAnticNLv2_Stereo_Speedx';
       %
       };
     
@@ -5742,13 +5884,13 @@ switch benchMark
       };
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/UZH_FPV_POSE_GT'
-    save_path           = './output/RAL19/Demo/'
+    save_path           = './output/TRO21/Demo/'
     %
     
     
     %% CDC & RAS 2019 related
     
-  case 'Gazebo_ORB_CDC19_Desktop'
+  case 'Gazebo_ORB_ICRA20_Desktop'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -5843,11 +5985,11 @@ switch benchMark
     
     %
     %     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Oxford_Robocar_POSE_GT'
-    save_path           = './output/RAS19/Gazebo/'
+    save_path           = './output/RAS20/Gazebo/'
     %
     
     
-  case 'Gazebo_Baseline_CDC19_Desktop'
+  case 'Gazebo_Baseline_ICRA20_Desktop'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -5906,7 +6048,7 @@ switch benchMark
     
     %     data_dir  = '/mnt/DATA/tmp/ClosedNav_v4/';
     % data_dir = '/media/yipuzhao/1399F8643500EDCD/ClosedNav_v4/';
-    data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_CDC19/gazebo_simulation/desktop/ClosedNav_latency/';
+    data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_ICRA20/gazebo_simulation/desktop/ClosedNav_latency/';
     
     pipeline_type = {
       'vo';
@@ -5948,11 +6090,11 @@ switch benchMark
     
     %
     %     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Oxford_Robocar_POSE_GT'
-    save_path           = './output/RAS19/Gazebo/'
+    save_path           = './output/RAS20/Gazebo/'
     %
     
     
-  case 'TSRB_RGBD_RAS19_Desktop'
+  case 'TSRB_RGBD_RAS20_Desktop'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -5997,8 +6139,8 @@ switch benchMark
     baseline_orb = 1;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/ORB_RGBD/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Lmk800/GF_RGBD/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/ORB_RGBD/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Lmk800/GF_RGBD/';
       };
     
     pipeline_type = {
@@ -6041,11 +6183,11 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Oxford_Robocar_POSE_GT'
-    save_path           = './output/RAS19/TSRB/'
+    save_path           = './output/RAS20/TSRB/'
     %
     
     
-  case 'TSRB_Stereo_RAS19_Desktop'
+  case 'TSRB_Stereo_RAS20_Desktop'
     %
     plot3DTrack = 1;
     fps = 30;
@@ -6099,19 +6241,19 @@ switch benchMark
     
     slam_path_list  = {
       %
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_desktop/ORB2_Stereo_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_MapHash_v2/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_GF_v2/';
-      %       %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_GF_gpu/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_Comb_v2/';
-      %       %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_Comb_gpu/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_desktop/ORB2_Stereo_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_MapHash_v2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_GF_v2/';
+      %       %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_GF_gpu/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_Comb_v2/';
+      %       %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_desktop/Lmk_800/ORB2_Stereo_Comb_gpu/';
       %
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_laptop/ORB2_Stereo_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_MapHash_v2/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_GF_v2/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_GF_gpu/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_Comb_v2/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_Comb_gpu/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_laptop/ORB2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_MapHash_v2/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_GF_v2/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_GF_gpu/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_Comb_v2/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/Map_Reusing/Turtlebot_laptop/Lmk_800/ORB2_Stereo_Comb_gpu/';
       };
     
     pipeline_type = {
@@ -6156,7 +6298,7 @@ switch benchMark
     
     %
     ref_path            = '/home/yipuzhao/ros_workspace/package_dir/ORB_Data/Oxford_Robocar_POSE_GT'
-    save_path           = './output/RAS19/TSRB/'
+    save_path           = './output/RAS20/TSRB/'
     %
     
     
@@ -6250,8 +6392,8 @@ switch benchMark
     baseline_orb = 1;
     
     slam_path_list  = {
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/vanilla_ORBv2_Stereo_Baseline/';
-      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/TUM_VI/delayed_ORBv2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/vanilla_ORBv2_Stereo_Baseline/';
+      %       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/TUM_VI/delayed_ORBv2_Stereo_Baseline/';
       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/SlowMo/TUM_VI/ORBv2_Stereo_SlowMo/';
       };
     
@@ -6364,8 +6506,8 @@ switch benchMark
       ];
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/ORBv1_Baseline/';
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Euclid/ORBv1_Baseline_lvl3_fac2/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/ORBv1_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Euclid/ORBv1_Baseline_lvl3_fac2/';
       '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Euclid_Test/ORBv1_Baseline_slow_v2/';
       '/mnt/DATA/DropboxContainer/Dropbox/PhD/Projects/Visual_SLAM/Euclid_Test/Lmk_800/ORBv1_info_measErr_v2/';
       };
@@ -6502,7 +6644,7 @@ switch benchMark
     baseline_orb = 1;
     
     slam_path_list  = {
-      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO19/Desktop/EuRoC/ORBv1_Baseline/';
+      '/mnt/DATA/Dropbox/PhD/Projects/Visual_SLAM/Experimental_TRO20/Desktop/EuRoC/ORBv1_Baseline/';
       '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_VIN/VINSORB_win10_RT_new/';
       };
     

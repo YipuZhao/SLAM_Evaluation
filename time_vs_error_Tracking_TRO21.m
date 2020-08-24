@@ -7,7 +7,7 @@ addpath('/mnt/DATA/SDK/aboxplot');
 % addpath('/mnt/DATA/SDK/DataDensity');
 
 % set up parameters for each benchmark
-benchMark = 'EuRoC_RAL19_Desktop' % 'NewCollege_RAL19_Desktop' % 'RobotCar_RAL19_Desktop' % 'Hololens_RAL19_Desktop' %
+benchMark = 'EuRoC_TRO21_Desktop' % 'NewCollege_TRO21_Desktop' % 'RobotCar_TRO21_Desktop' % 'Hololens_TRO21_Desktop' %
 % 'EuRoC_GoodBA_Mono' 
 
 setParam

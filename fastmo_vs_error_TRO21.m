@@ -7,11 +7,11 @@ addpath('/mnt/DATA/SDK/aboxplot');
 % addpath('/mnt/DATA/SDK/DataDensity');
 
 % set up parameters for each benchmark
-benchMark = 'EuRoC_RAL19_FastMo_OnlFAST' % 'EuRoC_RAL19_FastMo_PreFAST' %
-% 
-% 'EuRoC_RAL19_Jetson' % 'FPV_RAL19_FastMo_OnlFAST' %
-% 'EuRoC_RAL19_FastMo_MinSet' % 'EuRoC_RAL19_FastMo' %
-% 'EuRoC_Mono_RAL19_FastMo_OnlFAST' % 'Hololens_RAL19_FastMo_OnlFAST' 
+benchMark = 'EuRoC_TRO21_Jetson_OnlFAST' % 'EuRoC_TRO21_Jetson_PreFAST' % 
+% 'EuRoC_TRO21_FastMo_OnlFAST' % 'EuRoC_TRO21_FastMo_PreFAST' %
+%
+% 'EuRoC_TRO21_FastMo_MinSet' % 'EuRoC_TRO21_FastMo' % 'FPV_TRO21_FastMo_OnlFAST' %
+% 'EuRoC_Mono_TRO21_FastMo_OnlFAST' % 'Hololens_TRO21_FastMo_OnlFAST'
 
 setParam
 
@@ -31,13 +31,14 @@ metric_type = {
 
 % do_fair_comparison = false; % true; %
 do_perc_plot = true; % false; %
+do_box_plot = true; % false; %
 plot_summary = false; % true; %
 scatter_buf = cell(length(metric_type), length(slam_path_list));
 table_buf = cell(length(metric_type), length(slam_path_list)*length(fast_mo_list));
 
 opt_time_only = false; % true;
 
-for sn = 1:length(seq_list) % [2,8] % [3,7,10] %
+for sn = 1:length(seq_list) %
   
   seq_idx = seq_list{sn};
   disp(['Sequence --------------------- ' seq_idx ' ---------------------'])
@@ -142,6 +143,7 @@ for sn = 1:length(seq_list) % [2,8] % [3,7,10] %
         base_lower = [];
         base_upper = [];
         base_plot_idx = [];
+        base_fastmo_summ{mn, tn, gn} = [];
         %
         for fn = 1:length(fast_mo_list)
           if isempty(err_struct{fn, (gn-1)*baseline_num+tn})
@@ -219,6 +221,12 @@ for sn = 1:length(seq_list) % [2,8] % [3,7,10] %
           % draw a point to the graph
           %       scatter(time_avg, err_avg, marker_styl{tn})
           
+          if round_num - K_fair(fn) < track_fail_thres
+            base_fastmo_summ{mn, tn, gn} = [base_fastmo_summ{mn, tn, gn}; err_all_rounds'];
+          else
+            base_fastmo_summ{mn, tn, gn} = [base_fastmo_summ{mn, tn, gn}; nan([1 round_num])];
+          end
+          
           if exist('table_index')
             if table_index(tn) == gn
               if round_num - K_fair(fn) < track_fail_thres
@@ -249,13 +257,11 @@ for sn = 1:length(seq_list) % [2,8] % [3,7,10] %
         end
         
         if do_perc_plot
-          
           errorbar(fast_mo_list(base_plot_idx), base_mean(base_plot_idx), ...
             base_mean(base_plot_idx) - base_lower(base_plot_idx), ...
             base_upper(base_plot_idx) - base_mean(base_plot_idx), ...
             marker_styl{tn}, 'color', marker_color{tn},...
             'ButtonDownFcn', {@errBarCallback, baseline_number_list(gn)})
-          
           title(['mean - ' num2str(lower_prc) '% - ' num2str(upper_prc) '%'])
         else
           plot(fast_mo_list(base_plot_idx), base_mean(base_plot_idx), ...
@@ -329,6 +335,71 @@ for sn = 1:length(seq_list) % [2,8] % [3,7,10] %
     end
     
   end
+  
+  %% plot the boxplot per sequence
+  for mn=1:length(metric_type)
+    boxplot_data_summ = [];
+    for tn = 1:4
+      gn = table_index(tn);
+      boxplot_data_summ = cat(3, boxplot_data_summ, reshape(base_fastmo_summ{mn, tn, gn}, [size(base_fastmo_summ{mn, tn, gn}) 1]));
+    end
+    
+    h(mn) = figure(mn);
+    clf
+    aboxplot(boxplot_data_summ, 'labels', legend_arr(1:4));
+    legend({'1x fast-mo';'2x fast-mo';'3x fast-mo';'4x fast-mo';'5x fast-mo';});
+    legend boxoff
+    xlabel('VSLAM Methods');
+    switch metric_type{mn}
+      case 'TrackLossRate'
+        ylabel('Un-Tracked Frame (%)')
+      case 'RMSE'
+        set(gca, 'YScale', 'log')
+        ylabel('RMSE (m)')
+        ylim([0.01 0.5])
+    end
+    
+    if strcmp(sensor_type, 'stereo')
+      export_fig(h(mn), [save_path '/Stereo_GFVar_Boxplot_' metric_type{mn} '_' seq_idx '.fig']);
+      export_fig(h(mn), [save_path '/Stereo_GFVar_Boxplot_' metric_type{mn} '_' seq_idx '.png']);
+    else
+      export_fig(h(mn), [save_path '/Mono_GFVar_Boxplots_' metric_type{mn} '_' seq_idx '.png']);
+      export_fig(h(mn), [save_path '/Mono_GFVar_Boxplot_' metric_type{mn} '_' seq_idx '.fig']);
+    end
+    
+    %
+    
+    boxplot_data_summ = [];
+    for tn = 4:baseline_num
+      gn = table_index(tn);
+      boxplot_data_summ = cat(3, boxplot_data_summ, reshape(base_fastmo_summ{mn, tn, gn}, [size(base_fastmo_summ{mn, tn, gn}) 1]));
+    end
+    
+%     if size(boxplot_data_summ, 1) > 1
+      h(mn) = figure(mn);
+      clf
+      aboxplot(boxplot_data_summ, 'labels', legend_arr(4:baseline_num));
+      legend({'1x fast-mo';'2x fast-mo';'3x fast-mo';'4x fast-mo';'5x fast-mo';});
+      legend boxoff
+      xlabel('VSLAM Methods');
+      switch metric_type{mn}
+        case 'TrackLossRate'
+          ylabel('Un-Tracked Frame (%)')
+        case 'RMSE'
+          set(gca, 'YScale', 'log')
+          ylabel('RMSE (m)')
+          ylim([0.01 1.5])
+      end
+      
+      if strcmp(sensor_type, 'stereo')
+        export_fig(h(mn), [save_path '/Stereo_Baselines_Boxplot_' metric_type{mn} '_' seq_idx '.fig']);
+        export_fig(h(mn), [save_path '/Stereo_Baselines_Boxplot_' metric_type{mn} '_' seq_idx '.png']);
+      else
+        export_fig(h(mn), [save_path '/Mono_Baselines_Boxplots_' metric_type{mn} '_' seq_idx '.png']);
+        export_fig(h(mn), [save_path '/Mono_Baselines_Boxplot_' metric_type{mn} '_' seq_idx '.fig']);
+      end
+    end
+%   end
   
   %% plot the track at an example run
   figure;

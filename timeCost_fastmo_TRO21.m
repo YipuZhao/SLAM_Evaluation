@@ -5,7 +5,7 @@ addpath('/mnt/DATA/SDK/altmany-export_fig');
 addpath('/mnt/DATA/SDK/aboxplot');
 
 % set up parameters for each benchmark
-benchMark = 'EuRoC_RAL19_FastMo' % 'EuRoC_RAL19_FastMo_MinSet'
+benchMark = 'EuRoC_TRO21_FastMo' % 'EuRoC_TRO21_FastMo_MinSet'
 
 setParam
 

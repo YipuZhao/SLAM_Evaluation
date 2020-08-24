@@ -7,10 +7,10 @@ addpath('/mnt/DATA/SDK/TORSCHE2017')
 addpath('/mnt/DATA/SDK/TORSCHE2017/+torsche')
 
 % set up parameters for each benchmark
-benchMark = 'EuRoC_RAL19_FastMo_Demo' % 'FPV_RAL19_FastMo_Demo' %
+benchMark = 'EuRoC_TRO21_FastMo_Demo' % 'FPV_TRO21_FastMo_Demo' %
 %
-% 'Hololens_RAL19_FastMo_Demo' % 'EuRoC_Mono_RAL19_FastMo_Demo'
-% 'EuRoC_RAL19_FastMo_OnlFAST' % 'EuRoC_RAL19_FastMo_PreFAST' % 'EuRoC_RAL19_FastMo' %
+% 'Hololens_TRO21_FastMo_Demo' % 'EuRoC_Mono_TRO21_FastMo_Demo' 
+% 'EuRoC_TRO21_FastMo_PreFAST' % 'EuRoC_TRO21_FastMo' % 
 
 setParam
 
@@ -20,8 +20,8 @@ ref_reload = 1;
 
 % round_num = 1;
 
-plot_time_breakdown = false; % true; %
-plot_time_schedule  = false; % true; %
+plot_time_breakdown = false; % true; % 
+plot_time_schedule  = false; % true; % 
 plot_time_bar       = true; % false; %
 
 total_time_summ = cell(length(fast_mo_list), baseline_num, 4);
@@ -33,7 +33,7 @@ bar_color = [
   0.30,0.75,0.93;
   ];
 
-for sn = 1:length(seq_list) % [1,5,10] %
+for sn = 1:length(seq_list) % 3 % 
   
   % Seq 0X
   seq_idx = seq_list{sn};
@@ -47,7 +47,7 @@ for sn = 1:length(seq_list) % [1,5,10] %
     for fn=1:length(fast_mo_list)
       log_{fn, tn} = [];
       track_loss_rate_{fn, tn} = [];
-      for rn = 1:round_num
+      for rn = 1 % :round_num
         disp(['Round ' num2str(rn)])
         % Load Log Files
         %         if tn == 1
@@ -433,7 +433,7 @@ for sn = 1:length(seq_list) % [1,5,10] %
         
         ylabel('Time Cost (ms)')
         %         ylim([0 1000])
-        ylim([0 max_y_lim])
+%         ylim([0 max_y_lim])
         
         %         if tn == baseline_num
         %           plot(x(vld_idx), log_{fn, tn}.timeBudget{rn}(vld_idx, :), 'r--')

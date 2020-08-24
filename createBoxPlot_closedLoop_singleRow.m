@@ -210,7 +210,7 @@ for vn=1:length(Fwd_Vel_List)
   %   print_idx = [1, 3, 5, 9, 13, 15, 16];
   % print_idx = [1, 2];
 %   print_idx = [1, 3, 5, 7, 11, 15, 17, 18];
-  print_idx = [5, 1, 3, 7, 11, 15];
+  print_idx = [11, 15, 7, 1, 3, 5, ];
 % print_idx = [1:size(err_summ,2)];
   err_avg = nanmean(err_summ(:, print_idx));
   for j=1:length(err_avg)
@@ -221,4 +221,6 @@ for vn=1:length(Fwd_Vel_List)
     end
   end
   
+  %% accumulate err_sum for full data assess
+  err_complete = [err_complete; err_summ];
 end

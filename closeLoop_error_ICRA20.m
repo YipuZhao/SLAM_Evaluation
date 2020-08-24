@@ -9,8 +9,8 @@ addpath('/mnt/DATA/SDK/aboxplot');
 benchMark = 'whatever'
 setParam
 
-data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_CDC19/gazebo_simulation/desktop/';
-% data_dir = '/mnt/DATA/DropboxContainer/Dropbox/PhD/Projects/Visual_SLAM/Experimental_CDC19/gazebo_simulation/old/'
+data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_ICRA20/gazebo_simulation/desktop/';
+% data_dir = '/mnt/DATA/DropboxContainer/Dropbox/PhD/Projects/Visual_SLAM/Experimental_ICRA20/gazebo_simulation/old/'
 % data_dir = '/media/yipuzhao/1399F8643500EDCD/ClosedNav_v4/';
 % data_dir = '/home/yipuzhao/Codes/VSLAM/SLAM_Evaluation/';
 
@@ -83,6 +83,7 @@ plot_vif    = true;
 plot_svo    = true;
 plot_orb    = true;
 plot_lazy   = false; % true;
+plot_gg = false;
 plot_gf     = true;
 plot_truth  = false; % true; % 
 %
@@ -152,7 +153,7 @@ metric_type = {
   %   'scale\_fac';
   %   'rel\_drift';
   %   'rel\_orient';
-  %   'latency';
+    'latency';
   }
 
 save_path       = './output/RAS19/pc/'

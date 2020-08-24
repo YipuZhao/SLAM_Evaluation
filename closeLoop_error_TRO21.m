@@ -10,10 +10,10 @@ benchMark = 'whatever'
 setParam
 
 % data_dir = '/home/yipuzhao/Codes/VSLAM/SLAM_Evaluation/';
-data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/gazebo_simulation/pc/';
-% data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS19/gazebo_simulation/laptop_onboard/';
+% data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/gazebo_simulation/pc/';
+data_dir = '/mnt/DATA/Dropbox/PhD/Projects/Visual_Inertial_Navigation/Experimental_RAS20/gazebo_simulation/laptop_onboard/';
 % data_dir = '/media/yipuzhao/651A6DA035A51611/Exp_ClosedLoop/Simulation/pc/';
-% data_dir = '/media/yipuzhao/1399F8643500EDCD/ClosedLoop_Exp/Simulation/laptop_onboard/';
+% data_dir = '/media/yipuzhao/651A6DA035A51611/Exp_ClosedLoop/Simulation/laptop_onboard/';
 
 
 %% Batch Config
@@ -78,33 +78,35 @@ min_match_num = int32(100);
 track_loss_ratio = [0.4 0.98]; % [0.9 0.98];
 
 fps = 30;
-imu_type = 'ADIS16448'; % 'mpu6000'; % 
+imu_type = 'mpu6000'; % 'ADIS16448'; % 
 
 vn_summ = 1;
 
+err_complete = [];
+
 %
-plot_msc        = true; % false; % 
-plot_vif        = true; % false; % 
-plot_svo        = true; % false; % 
+plot_msc        = true; % false; %
+plot_vif        = true; % false; %
+plot_svo        = true; % false; %
 plot_orb        = true;
 plot_lazy       = false; % true;
 plot_gf         = true;
-plot_gg         = true; % false; % 
+plot_gg         = true; % false; %
 plot_truth      = true; % false; % 
 %
-append_msc        = false; % true; % 
-append_vif        = false; % true; % 
-append_svo        = false; % true; % 
-append_orb        = false; % true; % 
-append_lazy       = false; % 
-append_gf         = false; % 
-append_gg         = true; % false; % 
-append_truth      = false; % true; % 
+append_msc        = false; % true; %
+append_vif        = false; % true; %
+append_svo        = false; % true; %
+append_orb        = false; % true; %
+append_lazy       = false; %
+append_gf         = false; %
+append_gg         = false; % true; % 
+append_truth      = false; % true; %
 %
-plot_errBox         = true; % false; % 
-plot_actTrack       = false; % true; % 
-plot_planTrack      = false; % true; %
-plot_actTrack_summ	= false; % true; % 
+plot_errBox         = true; % false; %
+plot_actTrack       = true; % false; % 
+plot_planTrack      = true; % false; %
+plot_actTrack_summ	= true; % false; %
 
 legend_arr = {};
 count = 0;
@@ -149,7 +151,8 @@ if plot_gg
   count = count + 4;
 end
 if plot_truth
-  legend_arr{count+1} = 'Perfect_{0}';
+  legend_arr{count+1} = 'Perfect';
+%   count = count + 1;
   legend_arr{count+2} = 'Perfect_{30}';
   count = count + 2;
 end
@@ -178,10 +181,8 @@ metric_type = {
   }
 
 % save_path       = './output/RAS19/lowpower/'
-save_path       = './output/RAS19/goodgraph/'
+save_path       = './output/TRO21/mpu6000/'
 
-%% Load data from rosbag
-% loadClosedLoopRes_rosbag
 
 %% Load data from text
 % loadClosedLoopRes_text
@@ -192,7 +193,7 @@ loadClosedLoopRes_matlab
 % err_est_gg = err_est_ggv2;
 
 %
-appendGoodGraphRes_text
+% appendGoodGraphRes_text
 
 %% Plot the results
 for sn=1:length(Seq_Name_List)
@@ -201,7 +202,7 @@ for sn=1:length(Seq_Name_List)
   for vn=1:length(Fwd_Vel_List)
     for fn = 1:length(Number_AF_List)
       %
-      duration_plan = arr_plan{sn, vn, fn}(end,1)-arr_plan{sn, vn, fn}(1,1);
+      duration_plan = arr_plan{sn, vn, 1}(end,1)-arr_plan{sn, vn, 1}(1,1);
       for rn = 1 : round_num
         %
         if plot_msc
@@ -227,11 +228,6 @@ for sn=1:length(Seq_Name_List)
         if plot_lazy
           err_est_lazy{sn, vn, fn} = checkTrackLoss(...
             err_est_lazy{sn, vn, fn}, rn, duration_plan, track_loss_ratio(1));
-        end
-        %
-        if plot_truth
-          err_est_truth{sn, vn, fn} = checkTrackLoss(...
-            err_est_truth{sn, vn, fn}, rn, duration_plan, track_loss_ratio(1));
         end
         %
         %         odom_end = err_est_msc{sn, vn, fn}.track_fit{rn}(1:3, end);
@@ -285,6 +281,15 @@ for sn=1:length(Seq_Name_List)
         %         end
         %
         %         err_est_gf{sn, vn, fn}.valid_flg{rn} = true;
+      end
+    end
+        %
+    for fn = 1:length(Vis_Latency_List)
+      for rn = 1 : round_num
+        if plot_truth
+          err_est_truth{sn, vn, fn} = checkTrackLoss(...
+            err_est_truth{sn, vn, fn}, rn, duration_plan, track_loss_ratio(1));
+        end
       end
     end
   end
@@ -515,3 +520,33 @@ end
 %     'err_nav_gf', 'err_est_gf', ...
 %     'arr_plan', 'End_Point_List');
 % end
+
+%%
+for i=1:size(err_complete,1)
+  for j=1:size(err_complete,2)
+    if err_complete(i,j) >= 5.0
+      err_complete(i,j) = nan;
+    end
+  end
+end
+%
+print_idx = [11, 15, 7, 1, 3, 5];
+disp 'total mean rmse: '
+err_avg = nanmean(err_complete(:, print_idx));
+for j=1:length(err_avg)
+  if j == length(err_avg)
+    fprintf(' %.3f \\\\ \n', round( err_avg(j), 4) )
+  else
+    fprintf(' %.3f &', round( err_avg(j), 4) )
+  end
+end
+%
+disp 'total variance rmse: '
+err_var = nanvar(err_complete(:, print_idx));
+for j=1:length(err_var)
+  if j == length(err_var)
+    fprintf(' %.3f \\\\ \n', round( err_var(j), 4) )
+  else
+    fprintf(' %.3f &', round( err_var(j), 4) )
+  end
+end
